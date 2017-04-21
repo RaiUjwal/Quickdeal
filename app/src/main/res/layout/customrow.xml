@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#E6E6DD"
+    android:weightSum="2"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="168dp"
+        android:layout_height="165dp"
+        card_view:cardCornerRadius="30dp"
+        android:layout_margin="5dp"
+        card_view:cardElevation="50dp"
+        android:layout_marginLeft="10dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/rLq20"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <ImageView
+            android:id="@+id/imageqd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_hardware" />
+
+        <TextView
+            android:id="@+id/titleqd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hardware"
+            android:maxWidth="15dp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/pencil"
+            android:gravity="center"
+
+            />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

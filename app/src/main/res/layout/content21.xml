@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".qd21.Main2Activityqd21"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        card_view:cardElevation="10dp"
+        android:layout_margin="4dp"
+        card_view:cardCornerRadius="1dp"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            >
+            <TextView  android:id="@+id/qd21text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sample"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/qd21"
+                android:padding="8dp"/>
+
+            <ImageView android:id="@+id/arrowrightqd21"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:src="@drawable/arrowright"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

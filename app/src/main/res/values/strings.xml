@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Quickdeal</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="qd20">
+
+        <item>"APPAREL,&amp;\n TEXTILES  ACCESSORIES"</item>
+        <item>"AUTO &amp;\nTRANSPORTATION"</item>
+        <item>"ELECTRONIC &amp;\n APPLIANCES"</item>
+        <item>"HARWARE  &amp;\nTOOLS"</item>
+    </string-array>
+
+    <string-array name="qd211">
+
+        <item>"text11"</item>
+        <item>"text12"</item>
+        <item>"text13"</item>
+        <item>"text14"</item>
+        <item>"text15"</item>
+        <item>"text16"</item>
+        <item>"text17"</item>
+    </string-array>
+
+    <string-array name="qd212">
+
+        <item>"text21"</item>
+        <item>"text22"</item>
+        <item>"text23"</item>
+        <item>"text24"</item>
+        <item>"text25"</item>
+        <item>"text26"</item>
+        <item>"text27"</item>
+    </string-array>
+
+    <string-array name="qd213">
+
+        <item>"text31"</item>
+        <item>"text32"</item>
+        <item>"text33"</item>
+        <item>"text34"</item>
+        <item>"text35"</item>
+        <item>"text36"</item>
+        <item>"text37"</item>
+    </string-array>
+
+    <string-array name="qd214">
+
+        <item>"text41"</item>
+        <item>"text42"</item>
+        <item>"text43"</item>
+        <item>"text44"</item>
+        <item>"text45"</item>
+        <item>"text46"</item>
+        <item>"text47"</item>
+
+    </string-array>
+
+</resources>
