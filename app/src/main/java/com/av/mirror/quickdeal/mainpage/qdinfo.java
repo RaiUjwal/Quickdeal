@@ -10,7 +10,6 @@ public class qdinfo {
    public int iconid;
    public String text;
 
-    RelativeLayout rel;
 
 
     public String getText() {

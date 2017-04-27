@@ -29,7 +29,7 @@
                 android:textStyle="bold"
                 android:padding="8dp"
                 android:textSize="20dp"
-                android:textColor="#652DCD"
+                android:textColor="#6317E7"
                 android:layout_marginTop="15dp"
                 />
             <TextView   android:id="@+id/subtextchatmsg"
@@ -39,6 +39,7 @@
                 android:layout_below="@id/titlechatmsg"
                 android:layout_marginLeft="38dp"
                 android:textSize="15dp"
+                android:maxWidth="300dp"
                 android:textColor="#D1D0D2"
                 />
 
@@ -51,12 +52,13 @@
                 android:layout_marginTop="10dp"
                 />
 
-            <ImageView  android:id="@+id/chatmsgimg"
-                android:layout_width="wrap_content"
+            <ImageView  android:id="@+id/BLACKchatmsgimgthumbup"
+                android:layout_width="79dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/chatmsgimg"
+                android:src="@drawable/dealgrey"
                 android:layout_alignParentRight="true"
                 android:minHeight="7dp"
+                android:maxWidth="15dp"
                 android:layout_below="@id/chatmsgtime"
                 />
 

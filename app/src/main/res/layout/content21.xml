@@ -30,14 +30,15 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="7dp"
                 android:textStyle="bold"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/qd21"
+                android:textSize="15dp"
+                android:maxWidth="300dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#68676B"
                 android:padding="8dp"/>
 
             <ImageView android:id="@+id/arrowrightqd21"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-
                 android:src="@drawable/arrowright"
                 android:padding="8dp"
                 android:layout_alignParentRight="true"

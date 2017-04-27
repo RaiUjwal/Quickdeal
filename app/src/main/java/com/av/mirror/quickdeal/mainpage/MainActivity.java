@@ -1,8 +1,10 @@
 package com.av.mirror.quickdeal.mainpage;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,17 +22,22 @@ import android.widget.Toast;
 import com.av.mirror.quickdeal.R;
 import com.av.mirror.quickdeal.chat.Main2Activitychats;
 import com.av.mirror.quickdeal.qd21.Main2Activityqd21;
+import com.av.mirror.quickdeal.service.Service;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerview;
     recadapter adapter;
     private GoogleApiClient client;
+    private int[] icons={R.drawable.ic_appareel,R.drawable.ic_auto,R.drawable.ic_electronics,R.drawable.ic_hardware};;
+    private String[] titles;
 
-
+    ArrayList<qdinfo> data=new ArrayList<qdinfo>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,11 +50,41 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        titles=this.getResources().getStringArray(R.array.quickdeal);
+
+
+        for(int i=0;i<4;i++) {
+            for (int j = 0; j < titles.length; j++) {
+            qdinfo item=new qdinfo();
+                item.setIconid(icons[j]);
+                item.setText(titles[j]);
+                data.add(item);
+            }
+        }
         recyclerview=(RecyclerView)findViewById(R.id.recyc);
         recyclerview.setLayoutManager(new GridLayoutManager(this,2));
-        adapter=new recadapter(qddata.getListdata(),this);
+        adapter=new recadapter(data,this);
         recyclerview.setAdapter(adapter);
+        recyclerview.addOnItemTouchListener(new recyclertouchlistener(MainActivity.this, recyclerview, new ClickListener() {
 
+
+            @Override
+            public void onClick(View view, int position) {
+
+                Intent in=new Intent(MainActivity.this,Main2Activityqd21.class);
+                in.putExtra("position",position%4);
+                startActivity(in);
+                Toast.makeText(MainActivity.this,"onClick"+position%4,Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+                Intent in=new Intent(MainActivity.this,Main2Activityqd21.class);
+                in.putExtra("position",position%4);
+                startActivity(in);
+                Toast.makeText(MainActivity.this,"onLongClick"+position,Toast.LENGTH_SHORT).show();
+            }
+        }));
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.pencil);
@@ -61,6 +100,86 @@ public class MainActivity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
+
+
+
+    static class recyclertouchlistener implements RecyclerView.OnItemTouchListener{
+
+        private GestureDetector gestureDetector;
+        private ClickListener clickListener;
+
+
+
+
+//constructor
+
+        public recyclertouchlistener(Context context, final RecyclerView recyclerView, final ClickListener clickListener) {
+
+            this.clickListener=clickListener;
+
+            gestureDetector=new GestureDetector(context,new GestureDetector.SimpleOnGestureListener(){
+
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+
+                    View child=recyclerView.findChildViewUnder(e.getX(),e.getY());
+                    if(child!=null && clickListener!=null ){
+
+                        clickListener.onLongClick(child,recyclerView.getChildPosition(child));
+                    }
+
+
+                    super.onLongPress(e);
+                }
+            });
+        }
+
+
+
+
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+
+
+
+            View child=rv.findChildViewUnder(e.getX(),e.getY());
+            if(child!=null && clickListener!=null && gestureDetector.onTouchEvent(e)){
+
+                clickListener.onClick(child,rv.getChildPosition(child));
+            }
+
+            //   gestureDetector.onTouchEvent(e);
+
+            return false;
+        }
+
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+        }
+
+    }
+
+
+
+
+    public static interface ClickListener{
+        public void onClick(View view,int position);
+
+        public void onLongClick(View view,int position);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -76,12 +195,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.chat) {
+        if (id == R.id.chattaskbar) {
             Intent in=new Intent(MainActivity.this,Main2Activitychats.class);
             startActivity(in);
             return true;
         }
-        if (id == R.id.person) {
+        if (id == R.id.persontaskbar) {
             Toast.makeText(MainActivity.this,"Contacts",Toast.LENGTH_SHORT).show();
             return true;
         }

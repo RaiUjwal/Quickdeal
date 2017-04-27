@@ -5,6 +5,24 @@ package com.av.mirror.quickdeal.chat;
  */
 public class chatinfo {
     public String chattitle,chatsubtext;
+    public int chatimageid;
+    private boolean fav=false;
+
+    public boolean isFav() {
+        return fav;
+    }
+
+    public void setFav(boolean fav) {
+        this.fav = fav;
+    }
+
+    public int getImageid() {
+        return chatimageid;
+    }
+
+    public void setImageid(int imageid) {
+        this.chatimageid = imageid;
+    }
 
     public String getChatsubtext() {
         return chatsubtext;

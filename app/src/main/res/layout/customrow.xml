@@ -13,8 +13,8 @@
         android:layout_width="168dp"
         android:layout_height="165dp"
         card_view:cardCornerRadius="30dp"
-        android:layout_margin="5dp"
         card_view:cardElevation="50dp"
+        android:layout_margin="5dp"
         android:layout_marginLeft="10dp"
 
         >
@@ -29,8 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="0dp"
             android:src="@drawable/ic_hardware" />
 
         <TextView
@@ -38,10 +38,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Hardware"
-            android:maxWidth="15dp"
             android:layout_marginTop="100dp"
             android:textStyle="bold"
-            android:padding="10dp"
+            android:padding="8dp"
+            android:textSize="15dp"
             android:textColor="@color/pencil"
             android:gravity="center"
 

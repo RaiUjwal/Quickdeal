@@ -27,7 +27,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".qd21.Main2Activityqd21" />
-        <activity android:name=".chat.Main2Activitychats"></activity>
+        <activity android:name=".chat.Main2Activitychats" />
+        <activity android:name=".service.Service" />
     </application>
 
 </manifest>

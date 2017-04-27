@@ -1,6 +1,7 @@
 package com.av.mirror.quickdeal.qd21;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.av.mirror.quickdeal.R;
+import com.av.mirror.quickdeal.service.Service;
 
 import java.util.ArrayList;
 
@@ -50,7 +52,7 @@ public class qd21recadapter extends RecyclerView.Adapter<qd21recadapter.qd21view
 
 
 
-    class qd21viewholder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class qd21viewholder extends RecyclerView.ViewHolder  {
 
         TextView text;
         Context ctx21;
@@ -61,17 +63,9 @@ public class qd21recadapter extends RecyclerView.Adapter<qd21recadapter.qd21view
             this.ctx21=ctx21;
             this.q21inf=q21inf;
             text=(TextView)itemView.findViewById(R.id.qd21text);
-            itemView.setOnClickListener(this);
         }
 
-        @Override
-        public void onClick(View v) {
-            int position=getAdapterPosition();
-            qd21info qdin=this.q21inf.get(position);
 
-            Toast.makeText(ctx21,"position"+position,Toast.LENGTH_SHORT).show();
-
-        }
     }
 
 }

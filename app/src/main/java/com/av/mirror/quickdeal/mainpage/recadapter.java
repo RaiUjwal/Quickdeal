@@ -61,11 +61,10 @@ public class recadapter extends RecyclerView.Adapter<recadapter.myviewholder> {
         return listdata.size();
     }
 
-    class myviewholder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class myviewholder extends RecyclerView.ViewHolder {
         qdinfo item;
         TextView name;
         ImageView image;
-        RelativeLayout rel20;
         Context ctx;
 
         ArrayList<qdinfo> qdinf=new ArrayList<qdinfo>();
@@ -75,22 +74,11 @@ public class recadapter extends RecyclerView.Adapter<recadapter.myviewholder> {
 
             this.ctx=ctx;
             this.qdinf=qdinf;
-            rel20=(RelativeLayout)itemView.findViewById(R.id.rLq20);
             name= (TextView) itemView.findViewById(R.id.titleqd1);
             image=(ImageView)itemView.findViewById(R.id.imageqd1);
-           rel20.setOnClickListener(this);
         }
 
 
-        @Override
-        public void onClick(View v) {
-            int position=getAdapterPosition();
-            qdinfo qdin=this.qdinf.get(position);
-            Toast.makeText(ctx,"position"+position%4,Toast.LENGTH_SHORT).show();
-            Intent in=new Intent(this.ctx,Main2Activityqd21.class);
-            this.ctx.startActivity(in);
 
-
-        }
     }
 }

@@ -2,57 +2,208 @@
     <string name="app_name">Quickdeal</string>
     <string name="action_settings">Settings</string>
 
-    <string-array name="qd20">
+    <string-array name="quickdeal">
 
-        <item>"APPAREL,&amp;\n TEXTILES  ACCESSORIES"</item>
+        <item>"APPAREL, TEXTILES &amp;\nACCESSORIES"</item>
         <item>"AUTO &amp;\nTRANSPORTATION"</item>
-        <item>"ELECTRONIC &amp;\n APPLIANCES"</item>
+        <item>"ELECTRONIC &amp;\nAPPLIANCES"</item>
         <item>"HARWARE  &amp;\nTOOLS"</item>
     </string-array>
 
-    <string-array name="qd211">
 
-        <item>"text11"</item>
-        <item>"text12"</item>
-        <item>"text13"</item>
-        <item>"text14"</item>
-        <item>"text15"</item>
-        <item>"text16"</item>
-        <item>"text17"</item>
+    <string-array name="apparel">
+
+        <item>"apparel1"</item>
+        <item>"apparel2"</item>
+        <item>"apparel3"</item>
+        <item>"apparel4"</item>
+        <item>"apparel5"</item>
+        <item>"apparel6"</item>
+        <item>"apparel7"</item>
     </string-array>
 
-    <string-array name="qd212">
+    <string-array name="auto">
 
-        <item>"text21"</item>
-        <item>"text22"</item>
-        <item>"text23"</item>
-        <item>"text24"</item>
-        <item>"text25"</item>
-        <item>"text26"</item>
-        <item>"text27"</item>
+        <item>"auto1"</item>
+        <item>"auto2"</item>
+        <item>"auto3"</item>
+        <item>"auto4"</item>
+        <item>"auto5"</item>
+        <item>"auto6"</item>
+        <item>"auto7"</item>
     </string-array>
 
-    <string-array name="qd213">
+    <string-array name="electronic">
 
-        <item>"text31"</item>
-        <item>"text32"</item>
-        <item>"text33"</item>
-        <item>"text34"</item>
-        <item>"text35"</item>
-        <item>"text36"</item>
-        <item>"text37"</item>
+        <item>"electronic1"</item>
+        <item>"electronic2"</item>
+        <item>"electronic3"</item>
+        <item>"electronic4"</item>
+        <item>"electronic5"</item>
+        <item>"electronic6"</item>
+        <item>"electronic7"</item>
     </string-array>
 
-    <string-array name="qd214">
+    <string-array name="hardware">
 
-        <item>"text41"</item>
-        <item>"text42"</item>
-        <item>"text43"</item>
-        <item>"text44"</item>
-        <item>"text45"</item>
-        <item>"text46"</item>
-        <item>"text47"</item>
+        <item>"hardware1"</item>
+        <item>"hardware2"</item>
+        <item>"hardware3"</item>
+        <item>"hardware4"</item>
+        <item>"hardware5"</item>
+        <item>"hardware6"</item>
+        <item>"hardware7"</item>
 
     </string-array>
+
+
+    <string-array name="chattitle">
+
+        <item>"chattitle 1"</item>
+        <item>"chattitle 2"</item>
+        <item>"chattitle 3"</item>
+        <item>"chattitle 4"</item>
+        <item>"chattitle 5"</item>
+        <item>"chattitle 6"</item>
+        <item>"chattitle 7"</item>
+
+    </string-array>
+
+    <string-array name="chatsubtext">
+
+        <item>"chatsubtext 1"</item>
+        <item>"chatsubtext 2"</item>
+        <item>"chatsubtext 3"</item>
+        <item>"chatsubtext 4"</item>
+        <item>"chatsubtext 5"</item>
+        <item>"chatsubtext 6"</item>
+        <item>"chatsubtext 7"</item>
+
+    </string-array>
+
+
+    <string-array name="servicetitle_apparel">
+
+        <item>"servicetitle_apparel 1"</item>
+        <item>"servicetitle_apparel 2"</item>
+        <item>"servicetitle_apparel 3"</item>
+        <item>"servicetitle_apparel 4"</item>
+        <item>"servicetitle_apparel 5"</item>
+        <item>"servicetitle_apparel 6"</item>
+        <item>"servicetitle_apparel 7"</item>
+
+    </string-array>
+
+    <string-array name="servicesubtext_apparel">
+
+        <item>"servicesubtext_apparel 1"</item>
+        <item>"servicesubtext_apparel 2"</item>
+        <item>"servicesubtext_apparel 3"</item>
+        <item>"servicesubtext_apparel 4"</item>
+        <item>"servicesubtext_apparel 5"</item>
+        <item>"servicesubtext_apparel 6"</item>
+        <item>"servicesubtext_apparel 7"</item>
+
+    </string-array>
+
+
+
+    <string-array name="servicetitle_auto">
+
+        <item>"servicetitle_auto 1"</item>
+        <item>"servicetitle_auto 2"</item>
+        <item>"servicetitle_auto 3"</item>
+        <item>"servicetitle_auto 4"</item>
+        <item>"servicetitle_auto 5"</item>
+        <item>"servicetitle_auto 6"</item>
+        <item>"servicetitle_auto 7"</item>
+
+    </string-array>
+
+    <string-array name="servicesubtext_auto">
+
+        <item>"servicesubtext_auto 1"</item>
+        <item>"servicesubtext_auto 2"</item>
+        <item>"servicesubtext_auto 3"</item>
+        <item>"servicesubtext_auto 4"</item>
+        <item>"servicesubtext_auto 5"</item>
+        <item>"servicesubtext_auto 6"</item>
+        <item>"servicesubtext_auto 7"</item>
+
+    </string-array>
+
+
+
+    <string-array name="servicetitle_electronic">
+
+        <item>"servicetitle_electronic 1"</item>
+        <item>"servicetitle_electronic 2"</item>
+        <item>"servicetitle_electronic 3"</item>
+        <item>"servicetitle_electronic 4"</item>
+        <item>"servicetitle_electronic 5"</item>
+        <item>"servicetitle_electronic 6"</item>
+        <item>"servicetitle_electronic 7"</item>
+
+    </string-array>
+
+    <string-array name="servicesubtext_electronic">
+
+        <item>"servicesubtext_electronic 1"</item>
+        <item>"servicesubtext_electronic 2"</item>
+        <item>"servicesubtext_electronic 3"</item>
+        <item>"servicesubtext_electronic 4"</item>
+        <item>"servicesubtext_electronic 5"</item>
+        <item>"servicesubtext_electronic 6"</item>
+        <item>"servicesubtext_electronic 7"</item>
+
+    </string-array
+        >
+
+
+
+    <string-array name="servicetitle_hardware">
+
+        <item>"servicetitle_hardware 1"</item>
+        <item>"servicetitle_hardware 2"</item>
+        <item>"servicetitle_hardware 3"</item>
+        <item>"servicetitle_hardware 4"</item>
+        <item>"servicetitle_hardware 5"</item>
+        <item>"servicetitle_hardware 6"</item>
+        <item>"servicetitle_hardware 7"</item>
+
+    </string-array
+        >
+
+    <string-array name="servicesubtext_hardware">
+
+        <item>"servicesubtext_hardware 1"</item>
+        <item>"servicesubtext_hardware 2"</item>
+        <item>"servicesubtext_hardware 3"</item>
+        <item>"servicesubtext_hardware 4"</item>
+        <item>"servicesubtext_hardware 5"</item>
+        <item>"servicesubtext_hardware 6"</item>
+        <item>"servicesubtext_hardware 7"</item>
+
+    </string-array>
+
+
+    <string name="chat2title">"Chat 2 Title "</string>
+
+    <string name="c2subtext1">"This is chat subtext 1\n\n\nThis is chat subtext 1\n\n\nThis is chat subtext 1\n\n\nThis is chat subtext 1\n\n\nThis is chat subtext 1\n\n\nThis is chat subtext 1\n\n\nThis is chat subtext 1\n\n\nThis is chat subtext 1\n\n\n"</string>
+
+    <string name="c2subtext2">"This is chat subtext 2\n\n\nThis is chat subtext 2\n\n\nThis is chat subtext 2\n\n\nThis is chat subtext 2\n\n\nThis is chat subtext 2\n\n\nThis is chat subtext 2\n\n\nThis is chat subtext 2\n\n\nThis is chat subtext 2\n\n\n"</string>
+
+    <string name="c2subtext3">"This is chat subtext 3\n\n\nThis is chat subtext 3\n\n\nThis is chat subtext 3\n\n\nThis is chat subtext 3\n\n\nThis is chat subtext 3\n\n\nThis is chat subtext 3\n\n\nThis is chat subtext 3\n\n\nThis is chat subtext 3\n\n\n"</string>
+
+    <string name="c2subtext4">"This is chat subtext 4\n\n\nThis is chat subtext 4\n\n\nThis is chat subtext 4\n\n\nThis is chat subtext 4\n\n\nThis is chat subtext 4\n\n\nThis is chat subtext 4\n\n\nThis is chat subtext 4\n\n\nThis is chat subtext 4\n\n\n"</string>
+
+    <string name="c2subtext5">"This is chat subtext 5\n\n\nThis is chat subtext 5\n\n\nThis is chat subtext 5\n\n\nThis is chat subtext 5\n\n\nThis is chat subtext 5\n\n\nThis is chat subtext 5\n\n\nThis is chat subtext 5\n\n\nThis is chat subtext 5\n\n\n"</string>
+
+    <string name="c2subtext6">"This is chat subtext 6\n\n\nThis is chat subtext 6\n\n\nThis is chat subtext 6\n\n\nThis is chat subtext 6\n\n\nThis is chat subtext 6\n\n\nThis is chat subtext 6\n\n\nThis is chat subtext 6\n\n\nThis is chat subtext 6\n\n\n"</string>
+
+    <string name="c2subtext7">"This is chat subtext 7\n\n\nThis is chat subtext 7\n\n\nThis is chat subtext 7\n\n\nThis is chat subtext 7\n\n\nThis is chat subtext 7\n\n\nThis is chat subtext 7\n\n\nThis is chat subtext 7\n\n\nThis is chat subtext 7\n\n\n"</string>
+
+
 
 </resources>
+

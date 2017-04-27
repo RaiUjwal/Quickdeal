@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/chat"
+        android:id="@+id/chattaskbar"
         android:icon="@drawable/chat_support"
-        android:title="chat"
+        android:title="chattaskbar"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/person"
+        android:id="@+id/persontaskbar"
         android:icon="@drawable/person"
-        android:title="person"
+        android:title="persontaskbar"
         app:showAsAction="always"/>
 </menu>
